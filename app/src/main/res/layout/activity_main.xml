@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.turing.recorder.MainActivity">
+
+    <Button
+        android:id="@+id/recorder16PCMBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="录音16Bit PCM" />
+
+    <Button
+        android:id="@+id/stopRecorderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止录音"
+        app:layout_constraintTop_toBottomOf="@id/recorder16PCMBtn" />
+
+    <Button
+        android:id="@+id/playPcmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="播放PCM"
+        app:layout_constraintTop_toBottomOf="@id/stopRecorderBtn" />
+
+</android.support.constraint.ConstraintLayout>
